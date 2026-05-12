@@ -84,9 +84,9 @@ class CYExtractor(BaseExtractor):
         if m := re.search(r"\[Carrier USDOT -\s*(\d+)\]", text, re.I):
             data["carrier_mc"] = m.group(1).strip()
 
-        data["carrier_contact"] = "REDACTED_PRIVACY_POLICY"
-        data["carrier_phone"]   = "REDACTED_PRIVACY_POLICY"
-        data["carrier_fax"]     = "REDACTED_PRIVACY_POLICY"
+        data["carrier_contact"] = "ANONIMO"
+        data["carrier_phone"]   = "ANONIMO"
+        data["carrier_fax"]     = "ANONIMO"
 
         def parse_stop(block: str, i: int, prefix: str):
             # YA NO CORTAMOS EL BLOQUE. Usamos las regex exactas sobre todas las líneas.
